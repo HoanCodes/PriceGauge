@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html>
-	<!-- <meta http-equiv="content-type" content="text/html; charset=utf-8" /> -->
-	<meta http-equiv="Access-Control-Allow-Origin" content="*" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <head>
-	<script src="scripts/app.js"></script>
-	<script src="scripts/UiPathRobot.js"></script>
+	<h1>PRICE GAUGE (TM)</h1>
 </head>
 <body>
-	<form>
-		
-			<label for="UserItem">Name an item to shop for: </label>
-			<input type="text" name="UserItem" id="UserItem">
-		
-		<button id="btStart" onclick=startPriceGauge()>Gauge the Price!</button>
+	<form id="user-form">
+		<table border="0" >
+			<tr><td>Product</td><td><input id="input-item" type="text" autofocus placeholder="name the item you wish to search" size="40"></td></tr>
+			<tr><td>Email</td><td><input id="input-email" type="text" autofocus placeholder="email to send the excel sheet to" size="40"></td></tr>
+			<tr><td></td><td><input id="submit-btn" type="submit" value="Gauge the Price!"></td></tr>
+		</table>
+	</form>
+	
+	<script src="scripts/app.js"></script>
+	<script src="scripts/UiPathRobot.js"></script>
 </body>
 </html>
